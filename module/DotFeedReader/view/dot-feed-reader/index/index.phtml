@@ -1,0 +1,23 @@
+<h1>Feed Reader : <?php // echo $this->feeds->channel->title;?></h1>
+
+<?php
+	//var_dump($this->feeds);
+?>
+
+
+<ul>
+<?php
+	foreach ($this->feeds as $item) {
+?>
+		
+		<li>
+			<h1>
+				<?php echo $item->getTitle();?>
+			</h1>	
+			<?php // echo $item->getDescription();?>
+		</li>
+
+<?php
+	} // foreach
+?>
+</ul>
